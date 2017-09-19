@@ -1,3 +1,5 @@
+%AW: Looks good. See comment below. 1/1.
+
 %Inclass assignment 5. 
 
 % 1. (a) Write a function that reads in an image and displays it so that 1%
@@ -17,6 +19,10 @@ b_adjust('pollen_image.jpg', 0.5)
 % specified. 
 img=imread('pollen_image.jpg');
 c_adjust('pollen_image.jpg', 0.5)
+
+%AW: This works fine. As a matter of style, when you use the conditional to check nargin,
+%only put the lines of code which differ inside the conditional. The lines that are the same
+% can be outside so you can write them once instead of twice. This helps keep you code more concise.
 
 %2. Write a function to take the reverse complement of a DNA sequence, that
 %is, returns the complementary base pair for each base, read from end
